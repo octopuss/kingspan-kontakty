@@ -33,6 +33,10 @@ header{
     border-bottom: 1px solid #ccc;
     flex-grow: 1;
 }
+#logo {
+    padding-left: 20px;
+    padding-top: 15px;
+}
 nav {
     display: flex;
    flex-grow: 1;
