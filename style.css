@@ -112,39 +112,12 @@ footer {
         display: none;
     }
 }
-.cls-1 {
-    fill: none;
-    stroke: #c6c6c6;
-    stroke-miterlimit: 10;
-    stroke-width: .85px;
-  }
-
-  .cls-2, .cls-3 {
-   fill: #004289;
-  }
-
-  .cls-4 {
-    fill: #fff;
-  }
-
-  .cls-5 {
-    fill: #1d1d1b;
-  }
-
-  .cls-6 {
-    fill: #c09a5d;
-  }
-
-  .cls-6, .cls-3 {
-    fill-rule: evenodd;
-  }
-
-.cls-7{
+.st1{
     display:block;
      pointer-events: all;
     cursor: pointer;
 }
-.cls-7:hover{
+.st1:hover{
 filter: url(#outer-glow-1);
 }
 .activeRegion {
