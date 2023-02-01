@@ -112,12 +112,16 @@ footer {
         display: none;
     }
 }
+.noFill path{
+    fill: none;
+}
 .st1{
     display:block;
      pointer-events: all;
     cursor: pointer;
 }
-.st1:hover{
+.noFill path:hover{
+fill: #fff;    
 filter: url(#outer-glow-1);
 }
 .activeRegion {
