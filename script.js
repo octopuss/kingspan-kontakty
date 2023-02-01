@@ -1,9 +1,9 @@
 function bindRegionEvents() {
-    const region = document.querySelector('#kralovehradecky');
-    region.addEventListener('click', (e) => {
-        region.classList.toggle("activeRegion");
-        console.log("click")
-    })
+    //const region = document.querySelector('#kralovehradecky');
+   // region.addEventListener('click', (e) => {
+   //     region.classList.toggle("activeRegion");
+   //     console.log("click")
+   // })
 }
 
 
