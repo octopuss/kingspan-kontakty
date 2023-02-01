@@ -1,0 +1,128 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, 
+menu, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;font-weight:300;font-size: 14px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+header{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+nav {
+    display: flex;
+    padding-left: 60px;
+   flex-grow: 1;
+}
+nav ul {
+ align-items: center;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+}
+
+li {
+    display: inline;
+    padding-right: 25px;
+}
+
+li a, li a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+footer {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #8a8989;
+    right: 0;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+#map {
+    display: inline-block;
+	position: relative;
+	width: 100%;
+    padding: 0 20%;
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+@media only screen and (max-width: 1200px) {
+    #map {
+       padding: 0 5%;
+    }
+}
+.cls-1 {
+    fill: none;
+    stroke: #c6c6c6;
+    stroke-miterlimit: 10;
+    stroke-width: .85px;
+  }
+
+  .cls-2, .cls-3 {
+   fill: #004289;
+  }
+
+  .cls-4 {
+    fill: #fff;
+  }
+
+  .cls-5 {
+    fill: #1d1d1b;
+  }
+
+  .cls-6 {
+    fill: #c09a5d;
+  }
+
+  .cls-6, .cls-3 {
+    fill-rule: evenodd;
+  }
+
+.cls-7{
+    display:block;
+     pointer-events: all;
+    cursor: pointer;
+}
+.cls-7:hover{
+filter: url(#outer-glow-1);
+}
+.activeRegion {
+filter: url(#outer-glow-1);
+}
