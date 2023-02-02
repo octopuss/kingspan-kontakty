@@ -1,13 +1,12 @@
 function bindRegionEvents() {
-    //const region = document.querySelector('#kralovehradecky');
-   // region.addEventListener('click', (e) => {
-   //     region.classList.toggle("activeRegion");
-   //     console.log("click")
-   // })
+    const regions = document.querySelectorAll(".noFill");
+   regions.forEach(region => {
+    region.addEventListener('click', (e) => {
+       console.log(region.id)
+       window.location.href = `./${region.id}.html`
+   });
+})
 }
-
-
-
 // -- everything starts here
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("Ready");
