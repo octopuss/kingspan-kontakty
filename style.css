@@ -96,31 +96,14 @@ footer {
 }
 #regionMap {
     flex: 0 1 60%; /*grow | shrink | basis */
-	position: relative;
+	display: flex;
 	width: 80%;
     padding: 0 0 0 30px;
 	vertical-align: middle; 
 	overflow: hidden; 
     order: 2
 }
-@media only screen and (max-width: 1200px) {
-    #map {
-       padding: 0 5%;
-    }
-    .tablet-display-none {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 600px) {
-    #map {
-       padding: 0;
-       margin-left: 20px;
-    }
-    .mobile-display-none {
-        display: none;
-    }
-}
 .noFill path{
     fill: none;
 }
@@ -137,12 +120,17 @@ filter: url(#outer-glow-1);
 filter: url(#outer-glow-1);
 }
 
+.contactTable {
+    display: flex;
+    order: 1
+}
+
 .contactTable table{
     width: 320px;
     margin-left: 80px;
     margin-right: 20px;
     margin-bottom: 40px;
-
+    display: block;
 }
 
 .contactTable tr {
@@ -191,5 +179,37 @@ filter: url(#outer-glow-1);
     #regionMap {
         order: 3;
         flex-basis: 80%
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #map {
+       padding: 0 5%;
+    }
+    .tablet-display-none {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #map {
+       padding: 0;
+       margin-left: 20px;
+    }
+    .mobile-display-none {
+        display: none;
+    }
+    #close {
+        order: 3;
+    }
+    .contactTable{
+        order: 2;
+    }
+    .contactTable table {
+        margin-left:30px;
+    }
+    #regionMap {
+        order: 2;
     }
 }
