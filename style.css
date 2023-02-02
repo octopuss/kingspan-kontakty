@@ -69,8 +69,8 @@ li a, li a:visited {
 main{
     display: flex;
     width: 100%;
-    justify-content: center;
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -95,12 +95,13 @@ footer {
 	overflow: hidden; 
 }
 #regionMap {
-    display: inline-block;
+    flex: 0 1 60%; /*grow | shrink | basis */
 	position: relative;
-	width: 100%;
+	width: 80%;
     padding: 0 0 0 30px;
 	vertical-align: middle; 
 	overflow: hidden; 
+    order: 2
 }
 @media only screen and (max-width: 1200px) {
     #map {
@@ -140,6 +141,8 @@ filter: url(#outer-glow-1);
     width: 300px;
     margin-left: 80px;
     margin-right: 20px;
+    margin-bottom: 40px;
+
 }
 
 .contactTable tr {
@@ -161,10 +164,25 @@ filter: url(#outer-glow-1);
 }
 
 #close {
+    order: 3;
+    display: flex;
     margin-top: 40px;
-    margin-right: 15%;
-    border: 1px solid;
     height:20px;
     width: 24px;
+    flex: 0 0 10%;
+    justify-content: left;
+}
+#close img{
+    border: 1px solid;
     padding: 4px;
+}
+
+@media only screen and (max-width: 1435px) {
+    #close {
+        order: 2
+    }
+    #regionMap {
+        order: 3;
+        flex-basis: 80%
+    }
 }
