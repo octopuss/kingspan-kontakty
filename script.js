@@ -1,5 +1,5 @@
 function preloadRegionImage(region) {
-    const link = document.querySelector(`preload-${region.id}`)
+    const link = document.querySelector(`#preload-${region.id}`)
        if(!link) {
         const l = document.createElement("link");
         l.rel = "preload";
