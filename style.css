@@ -122,7 +122,6 @@ filter: url(#outer-glow-1);
 
 .contactTable {
     display: flex;
-    order: 1
 }
 
 .contactTable table{
@@ -172,12 +171,12 @@ filter: url(#outer-glow-1);
     padding: 4px;
 }
 
+#close a {
+    color: none;
+}
+
 @media only screen and (max-width: 1435px) {
-    #close {
-        order: 2
-    }
     #regionMap {
-        order: 3;
         flex-basis: 80%
     }
 }
@@ -200,16 +199,7 @@ filter: url(#outer-glow-1);
     .mobile-display-none {
         display: none;
     }
-    #close {
-        order: 3;
-    }
-    .contactTable{
-        order: 2;
-    }
     .contactTable table {
         margin-left:30px;
-    }
-    #regionMap {
-        order: 2;
     }
 }
